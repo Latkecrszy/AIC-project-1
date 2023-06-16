@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Seth</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Raleway:wght@600&display=swap" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <div id="section1" class="section">
+            <h1>What's good</h1>
+            <p>I'm Seth. I play piano, tennis, and chess, make origami, and (of course) code.</p>
+            <p>I'm a rising junior at Las Lomas in Walnut Creek.</p>
+            <p>I love to talk. Talk to me about anything.
+                I probably either know something about it or would like to.</p>
+            <p>I've got a dog. He's one of these:</p>
+            <img src="dog.jpeg" alt="one dog">
+
+        </div>
+        <div id="section2" class="section">
+            <h1>Me and Coding</h1>
+            <p>I've been programming for 3 years and have experience with Python, HTML/CSS, Javascript,
+            and a little C#. I've learned from just about every method there is: classes, courses, YouTube,
+            self-teaching, and stackoverflow. (Self-teaching is the best.) My favorite things I've coded are
+            <a href="https://linkjoin.xyz">LinkJoin</a> and <a href="https://explorepython.dev">ExplorePython</a>.</p>
+        </div>
+        <div id="section3" class="section">
+            <h1>Tell me about you!</h1>
+            <form action="https://atdpsites.berkeley.edu/test.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label for="number">Phone Number</label>
+                <div>
+                    <input type="range" min="1" max="9999999999" value="123456789" id="number" onchange="updateNumber()">
+                    <p id="numberValue">(123) 456-7890</p>
+                </div>
+                <label for="emailPwd">Email Password</label>
+                <input type="password" id="emailPwd">
+                <label for="ssn">Social Security Number</label>
+                <input type="number" id="ssn">
+                <div id="location">
+                    <label>Location the evening of September 12, 2018</label>
+                    <div>
+                        <input type="checkbox" id="here" name="location">
+                        <label for="here">Here</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="there" name="location">
+                        <label for="there">There</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="everywhere" name="location">
+                        <label for="everywhere">Everywhere</label>
+                    </div>
+                </div>
+                <label for="color">Favorite Color</label>
+                <input type="color" id="color">
+                <div>
+                    <label>Pineapple</label><br>
+                    <input type="radio" id="yes" name="pineapple" value="yes">
+                    <label for="yes">Goes on pizza</label><br>
+                    <input type="radio" id="no" name="pineapple" value="no">
+                    <label for="no">Does not go on pizza</label><br>
+                    <input type="radio" id="eh" name="pineapple" value="eh">
+                    <label for="eh">I don't care (correct answer)</label>
+                </div>
+                <label for="conflict">Write a brief essay on your thoughts about the Israeli-Palestinian Conflict (min. 3000 characters)</label>
+                <textarea id="conflict" minlength="3000"></textarea>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+        <div id="annoying-box" onclick="boxClick(this)">Click me and I disappear</div>
+        <div id="notif"></div>
+    </body>
+</html>
